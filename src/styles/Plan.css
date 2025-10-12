@@ -1,0 +1,398 @@
+.plan-banner {
+  background-image: url('/images/planbanner.jpg');
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  font-weight: 100;
+  font-size: larger;
+}
+
+.intro-plan-large {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap; /* allow images to wrap on smaller screens */
+}
+
+.intro-plan-large img {
+  width: 99%;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box; /* ensure padding doesn't mess width */
+}
+
+.intro-plan-small {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap; /* allows images to stack nicely if screen is narrow */
+}
+
+.intro-plan-small img {
+  width: 350px;
+  max-width: 100%; /* ensures image doesn't overflow on smaller screens */
+  height: auto; /* keeps image aspect ratio intact */
+}
+
+.only-mobile-plan{
+  display: none;
+}
+
+/* MOBILE RESPONSIVE STYLES */
+@media (max-width: 768px) {
+
+  .only-mobile-plan{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+  }
+
+  .only-mobile-plan img{
+    /* display: none; */
+    width: 100px;
+  }
+  .intro-plan-large {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+  }
+
+  .intro-plan-large img {
+    width: 90%; /* smaller width to fit mobile nicely */
+    padding: 1rem;
+  }
+
+  .intro-plan-small {
+    display: none;
+    flex-direction: column; /* stack images vertically */
+    gap: 1rem; /* smaller gap on mobile */
+  }
+
+  .intro-plan-small img {
+    width: 90%; /* fit nicely on mobile screens */
+    padding: 0.5rem;
+  }
+}
+
+/* Extra small screens (iPhone SE, small Androids) */
+@media (max-width: 480px) {
+  .intro-plan-large img,
+  .intro-plan-small img {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+
+
+.bell-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* or a specific width if needed */
+  gap: 10px; /* space between bell and lines */
+  margin: 2rem 0;
+}
+
+.line {
+  flex: 1; /* lines expand to fill space equally */
+  border: none;
+  height: 1px;
+  background-color: #ccc; /* change to your theme color */
+}
+
+.bell-icon {
+  width: 80px;
+  height: 80px;
+  opacity: 0.7;
+}
+
+.bow img {
+  height: 100px; /* adjust size as needed */
+  width: 100px;
+}
+.plan-writeup{
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  text-align: center;
+  padding:3rem;
+  color: #8C916C;
+  max-width: 1000px;
+
+}
+
+/* Writeup */
+
+.mid-writeup{
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  text-align: center;
+  padding:3rem;
+  color: #8C916C;
+  max-width: 1000px;
+
+}
+
+.mid-writeup-img{
+  display: flex;
+  justify-content: center;
+
+}
+
+.mid-writeup-img img{
+  height: 400px;
+  width:90%;
+}
+
+/* Work Process */
+
+.work-process-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f7f4eb; /* light cream background like your image */
+}
+
+.work-process-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.work-process-text h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #8C916C;
+  margin-bottom: 1rem;
+  text-align: center;
+  /* text-transform: uppercase; */
+}
+
+.work-process-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #8C916C;
+}
+
+.work-process-image {
+  flex: 1;
+}
+
+.work-process-image img {
+  width:600px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+/* Services */
+.services-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 50px 20px;
+  background-color: #fff;
+  flex-wrap: wrap; /* wrap on smaller screens */
+}
+
+/* New wrapper to pair card + image */
+.service-card-with-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* You already had this — reused it */
+.service-card {
+  margin-bottom: 20px;
+}
+
+.service-card h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #7A7A52;
+  margin-bottom: 20px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Image styling — reused but fine-tuned */
+.image-wrapper {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  display: block;
+}
+
+.image-wrapper:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .services-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card-with-image {
+    max-width: 90%;
+  }
+}
+
+
+/* Responsive */
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Plan Banner */
+  .plan-banner {
+    height: 200px;
+  }
+
+  .plan-banner h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Intro Plan Section */
+  .intro-plan-large img {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .intro-plan-small {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .intro-plan-small img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  /* Bell Divider */
+  .bell-divider {
+    margin: 1rem 0;
+  }
+
+  .bow img {
+    height: 60px;
+    width: 60px;
+  }
+
+  /* Text Sections */
+  .plan-writeup, 
+  .mid-writeup,
+  .founder-description {
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .founder-heading {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  /* Mid Writeup Image */
+  .mid-writeup-img img {
+    height: auto;
+    width: 100%;
+  }
+
+  /* Work Process Section */
+  .work-process-section {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+
+  .work-process-text {
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .work-process-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Services Section */
+  .services-section {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .service-card {
+    max-width: 100%;
+  }
+
+  /* Gallery Container */
+  .gallery-container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+    white-space: normal;
+  }
+
+  .image-wrapper {
+    width: 100%;
+  }
+
+  .image-wrapper img {
+    max-width: 100%;
+  }
+
+  /* Founder Note Section */
+  .founder-note {
+    padding: 1rem;
+  }
+
+  .vertical-line {
+    margin-right: 0.5rem;
+  }
+}
+
+/* Additional styles for very small screens */
+@media (max-width: 480px) {
+  .plan-banner {
+    height: 150px;
+  }
+
+  .plan-banner h1 {
+    font-size: 1.2rem;
+  }
+
+  .bow img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .founder-heading {
+    font-size: 1rem;
+  }
+}

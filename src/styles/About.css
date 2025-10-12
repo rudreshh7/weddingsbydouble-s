@@ -1,0 +1,773 @@
+.about-us-banner {
+  background-image: url('/images/aboutusbanner.jpg');
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+.magaz{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.magaz img{
+  width: 100%;
+}
+
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* Optional: Dark overlay for better text contrast */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay h1 {
+  color: white;
+  letter-spacing: 3px;
+}
+
+/* Our Story */
+
+
+.our-story-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.our-story-text {
+  flex: 1;
+  min-width: 300px;
+  color: #6a704c;
+
+
+}
+
+.our-story-text h2 {
+  font-size: 2rem;
+  color: #6a704c;
+  margin-bottom: 1.5rem;
+}
+
+.our-story-text p {
+  font-size: 1rem;
+  color: #6a704c;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.our-story-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.our-story-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .our-story-section {
+    flex-direction: column;
+    padding: 3rem 1rem;
+    gap: 1.5rem;
+    margin-bottom: 18rem;
+  }
+  
+  .our-story-text {
+    order: 2;
+  }
+  
+  .our-story-image {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+  
+  .our-story-text h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .our-story-section {
+    padding: 2rem 1rem;
+  }
+  
+  .our-story-text h2 {
+    font-size: 1.5rem;
+  }
+  
+  .our-story-text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Team Section */
+
+.team-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.team-image-container {
+  position: relative;
+  flex: 1;
+  max-width: 40%;
+}
+
+.team-image {
+  width:300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.team-text-container {
+  flex: 2;
+  font-size: 1rem;
+  color: #3a3a3a;
+  line-height: 1.8;
+  position: relative;
+}
+
+
+/* A Section */
+/* 🟨 New Achievements Section Styles */
+.achievements-section {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  width: 100%;
+  
+  background-color: #f8f1df;
+  padding: 3rem 2rem;
+  text-align: right; /* Aligns all inner text to the right */
+
+}
+
+@media screen and (max-width: 768px) {
+  
+
+  .team-image {
+    display: none;
+  }
+
+  .team-text-container{
+    display: none;
+  }
+
+ 
+}
+
+
+
+/* Default styles (Mobile First) */
+.stats {
+  display: flex;
+  justify-content: center; /* Center items on mobile */
+  gap: 2rem; /* Smaller gap for mobile */
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding-inline: 1.5rem; /* Reduced padding for mobile */
+  text-align: center; /* Center text within each stat item on mobile */
+}
+
+.stat {
+  /* Add a max-width or flex-basis if needed, depending on content */
+  /* Example: flex-basis: 150px; */
+}
+
+.stat h2 {
+  font-size: 1.8rem; /* Slightly smaller base font size */
+  font-weight: bold;
+  color: #6d734b;
+  margin: 0;
+}
+
+.stat h2 span {
+  font-size: 1.3rem; /* Adjust span size accordingly */
+  margin-left: 0.25rem;
+  display: inline-block; /* Prevents awkward wrapping */
+}
+
+.stat p {
+  font-size: 0.9rem; /* Slightly smaller base paragraph text */
+  margin-top: 0.5rem;
+  color: #3e3e3e;
+}
+
+/* Styles for medium screens and up (e.g., tablets: 768px and above) */
+@media screen and (min-width: 768px) {
+  .stats {
+    justify-content: flex-end; /* Align to end on larger screens */
+    gap: 3rem; /* Increase gap */
+    padding-inline: 5rem; /* Increase padding */
+    text-align: left; /* Align text left again */
+  }
+
+  .stat h2 {
+    font-size: 2rem; /* Restore original font size */
+  }
+
+  .stat h2 span {
+    font-size: 1.5rem; /* Restore original span size */
+  }
+
+  .stat p {
+    font-size: 0.95rem; /* Restore original paragraph size */
+  }
+}
+
+/* Styles for large screens and up (e.g., desktops: 1200px and above) */
+@media screen and (min-width: 1200px) {
+  .stats {
+    gap: 4rem; /* Restore original gap */
+    padding-inline: 10rem; /* Restore original padding for very large screens */
+  }
+}
+
+
+
+/* Special Image */
+.special-img img{
+  display: none;
+
+}
+
+
+@media screen and (max-width: 768px) {
+.special-img img{
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  padding: 1rem;
+
+
+}
+
+}
+
+
+
+/* Video Section */
+
+.video-section {
+  /* background-color: #000; */
+  padding: 6rem 4rem; /* Adds vertical spacing and horizontal margin */
+  box-sizing: border-box;
+}
+
+.video-wrapper {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+/* Tablets and smaller desktops */
+@media (max-width: 992px) {
+  .video-section {
+    padding: 4rem 2rem;
+  }
+}
+
+/* Phones (portrait and landscape) */
+@media (max-width: 768px) {
+  .video-section {
+    padding: 3rem 1rem;
+  }
+
+  .video-container {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Small phones (like iPhone SE, older Android) */
+@media (max-width: 480px) {
+  .video-section {
+    padding: 2rem 0.5rem;
+  }
+
+  .video-container {
+    padding-top: 56.25%; /* still 16:9 ratio */
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+/* Why we different section */
+
+.different-section{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  
+
+}
+
+.different-heading{
+ 
+    font-size: x-large;
+    text-align: center;
+    padding: 2rem;
+    color: #8C916C;
+  
+  
+  
+}
+.service-card{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding-inline: 1rem;
+  box-sizing: border-box;
+}
+
+.servicecard-img img{
+  width: 100px;
+}
+.servicecard-title p {
+  font-weight: bold;
+  color: #8C916C;
+
+
+}
+
+.servicecard-desc p{
+  font-size: small;
+    color: #8C916C;
+
+
+}
+
+/* Achievement section base styling */
+.achievement-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  position: relative;
+}
+
+.achievements-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+}
+
+.achievements-image {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  z-index: 2;
+}
+
+.achievements-image img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.achievements-content {
+  background-color: #fdf3e6;
+  padding: 60px 80px;
+  border-radius: 8px;
+  width: 70%;
+  position: relative;
+  z-index: 1;
+  text-align: right;
+  box-sizing: border-box;
+  transform: translateY(-20px);
+  padding-inline: 8rem;
+  border-radius: 8px;
+}
+
+.achievements-content h2 {
+  font-size: 28px;
+  color: #556b2f;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.achievements-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.achievements-content td {
+  padding: 10px 0;
+  font-size: 18px;
+  color: #555;
+  border-bottom: 1px solid #ccc;
+}
+
+.achievements-content td:first-child {
+  width: 80px;
+  color: #888;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 992px) {
+  .achievements-container {
+    justify-content: center;
+  }
+  
+  .achievements-content {
+    width: 85%;
+    padding: 50px 40px;
+    padding-inline: 4rem;
+  }
+  
+  .achievements-image img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .achievement-section {
+    padding: 60px 15px;
+  }
+  
+  .achievements-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .achievements-image {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 30px;
+  }
+  
+  .achievements-image img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .achievements-content {
+    width: 100%;
+    transform: none;
+    text-align: center;
+    padding: 40px 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .achievements-image img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .achievements-content {
+    padding: 30px 20px;
+  }
+  
+  .achievements-content h2 {
+    font-size: 24px;
+  }
+  
+  .achievements-content td {
+    font-size: 16px;
+  }
+}
+
+/* Writeup  One*/
+
+.about-writeup-one{
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  text-align: center;
+  padding:3rem;
+  color: #8C916C;
+  max-width: 1000px;
+
+}
+
+/* Magazine */
+.magazine-cover{
+  display: flex;
+  justify-content: center;
+}
+
+.magazine-cover img{
+  width: 400px;
+  height: 100%;
+}
+
+/* Our Founders */
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 4rem;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  width: 250px;
+  height: 300px;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background-color: #fdebc6; /* Light yellow background */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.member-info {
+  margin-top: 1.5rem;
+}
+
+.role {
+  font-size: 1rem;
+  color: #7a7a7a;
+  margin-bottom: 0.5rem;
+  font-family: 'Georgia', serif;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  font-family: 'Georgia', serif;
+}
+
+.founder-heading {
+  font-size: x-large;
+  text-align: center;
+  padding: 2rem;
+  color: #8C916C;
+}
+
+/* -------------------- Responsive Styles -------------------- */
+@media (max-width: 768px) {
+  .team-container {
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: nowrap; /* Keep them in one row */
+    overflow-x: auto; /* Allow scrolling if too wide */
+  }
+
+  .image-container {
+    width: 150px;
+    height: 180px;
+  }
+
+  .image-container::before {
+    width: 180px;
+    height: 180px;
+  }
+
+  .member-info {
+    margin-top: 1rem;
+  }
+
+  .role {
+    font-size: 0.85rem;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+}
+
+/* Optional — Even smaller screens (extra safety) */
+@media (max-width: 480px) {
+  .image-container {
+    width: 120px;
+    height: 150px;
+  }
+
+  .image-container::before {
+    width: 150px;
+    height: 150px;
+  }
+
+  .role {
+    font-size: 0.75rem;
+  }
+
+  .name {
+    font-size: 0.9rem;
+  }
+}
+
+.ending-heading{
+  font-size: x-large;
+  text-align: center;
+  padding: 2rem;
+  color: #8C916C;
+  
+}
+
+.ending{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ending-small{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/*  */
+
+@media (max-width: 768px) {
+  .ending{
+    flex-direction: column;
+  }
+  .ending-big{
+    margin: 0 auto;
+    align-items: center;
+
+  }
+
+  .ending-small{
+display: none;  }
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fffdf9;
+  border-radius: 15px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2 rem;
+  color: #8C916C;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-box {
+  background: #f7f7f7;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+  transform: scale(1.02);
+}
+
+label {
+  font-weight: bold;
+  color: #556b2f;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.info-box a {
+  color: #8C916C;
+  text-decoration: none;
+  font-family: 'Segoe UI', sans-serif;
+
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}

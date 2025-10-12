@@ -1,0 +1,306 @@
+/* TestimonialCards.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Dancing+Script:wght@600;700&family=Montserrat:wght@400;500&display=swap');
+
+.testimonial-section {
+  background-color: #FFFDFA;
+  /* padding: 3rem 1.5rem; */
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Keep the header styling as is */
+.testimonial-header {
+  position: relative;
+  margin-bottom: 2.5rem;
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 2rem;
+}
+
+.testimonial-header h2 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  color: #8C916C;
+  margin: 0;
+}
+
+.testimonial-header .what {
+  position: relative;
+  z-index: 2;
+  left: 10rem;
+  top: 5rem;
+}
+
+.testimonial-header .they {
+  position: relative;
+  left: 15rem;
+  top: 7rem;
+  margin-top: -0.8rem;
+  z-index: 2;
+}
+
+.testimonial-header .say {
+  position: relative;
+  left: 20rem;
+  top: 8rem;
+  margin-top: -0.8rem;
+  z-index: 2;
+}
+
+/* New creative card container */
+.testimonial-card-container {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  margin: 3rem auto 0;
+  perspective: 1200px;
+}
+
+.testimonial-card {
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  transition: transform 0.7s ease, opacity 0.5s ease;
+  overflow: visible;
+  animation: floatIn 0.8s ease-out;
+  height: auto;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.card-content {
+  position: relative;
+  background-color: #FFFDFA;
+  border-radius: 20px;
+  padding: 3rem 2.5rem 2rem;
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(140, 145, 108, 0.15);
+  z-index: 2;
+  border: 1px solid rgba(140, 145, 108, 0.3);
+}
+
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.card-decoration {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(140, 145, 108, 0.08) 0%, rgba(140, 145, 108, 0.03) 70%, transparent 100%);
+}
+
+.left-decoration {
+  top: -40px;
+  left: -40px;
+  animation: pulse 6s infinite alternate;
+}
+
+.right-decoration {
+  bottom: -40px;
+  right: -40px;
+  animation: pulse 6s infinite alternate-reverse;
+  width: 120px;
+  height: 120px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.3;
+  }
+}
+
+/* Quote styling */
+.quote-container {
+  position: relative;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.quote-marks {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  line-height: 1;
+  color: rgba(140, 145, 108, 0.2);
+  position: absolute;
+}
+
+.left-quote {
+  top: -20px;
+  left: -10px;
+}
+
+.right-quote {
+  bottom: -40px;
+  right: -10px;
+}
+
+.quote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #8C916C;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(140, 145, 108, 0.15);
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #333;
+  margin: 0;
+}
+
+.rating {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.star {
+  font-size: 1.1rem;
+  color: #f5a623;
+  margin-left: 0.2rem;
+}
+
+.navigation-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(140, 145, 108, 0.3);
+  border: none;
+  margin: 0 6px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #8C916C;
+  transform: scale(1.5);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .testimonial-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .testimonial-header .what {
+    left: 5rem;
+    top: 3rem;
+  }
+  
+  .testimonial-header .they {
+    left: 8rem;
+    top: 5rem;
+  }
+  
+  .testimonial-header .say {
+    left: 12rem;
+    top: 7rem;
+  }
+  
+  .card-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .quote-marks {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-header h2 {
+    font-size: 2rem;
+  }
+  
+  .testimonial-header .what {
+    left: 2rem;
+    top: 2rem;
+  }
+  
+  .testimonial-header .they {
+    left: 4rem;
+    top: 3.5rem;
+  }
+  
+  .testimonial-header .say {
+    left: 6rem;
+    top: 5rem;
+  }
+  
+  .card-content {
+    padding: 1.5rem 1rem 1rem;
+  }
+  
+  .quote-marks {
+    font-size: 2.5rem;
+  }
+  
+  .name {
+    font-size: 1.2rem;
+  }
+  
+  .quote {
+    font-size: 0.9rem;
+  }
+  
+  .card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .rating {
+    align-self: flex-end;
+  }
+}

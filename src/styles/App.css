@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Italianno&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Parisienne&family=Pinyon+Script&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.flower-blend{
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  width: auto;
+  max-width: 200px;
+  height: auto;
+}

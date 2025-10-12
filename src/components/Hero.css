@@ -1,0 +1,94 @@
+.hero-container{
+  position: relative;
+  min-height:50rem;
+  
+}
+
+.title{
+  position: absolute;
+  top: 15%;
+  right: 30%;
+  left: 5%;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color:white;
+  text-shadow: 0.5px 0.5px 0.5px black;
+ 
+}
+
+
+
+.hero-text-area{
+  position:absolute ;
+  top: 35%;
+  left: 5%;
+  right: 50%;
+  color: white;
+  text-shadow: 0.5px 0.5px 1.5px black;
+}
+
+.hero-text-area p{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text-area button{
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff4f81;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+}
+
+.hero-text-area button:hover{
+  background-color: #e63d6f;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .hero-text-area p {
+    font-size: 0.5rem;
+  }
+
+  .hero-text-area button {
+    display: none;
+  }
+}
+
+
+/* Animations */
+.title, .hero-text-area {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .hero-container{
+    position: relative;
+    min-height:20rem;
+    
+  }
+  
+
+
+}
+
