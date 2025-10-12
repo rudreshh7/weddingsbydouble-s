@@ -2,63 +2,6 @@
 import React from "react";
 // import "../styles/VeeraliAndMichale.css";
 import "../../styles/NikitaAndPhilippe.css";
-import v1 from "/images/veerali/v1.jpg";
-// import v2 from "/images/veerali/v2.jpg";
-import v3 from "/images/veerali/v3.jpg";
-import v4 from "/images/veerali/v4.jpg";
-import v5 from "/images/veerali/v5.jpg";
-import v6 from "/images/veerali/v6.jpg";
-import v7 from "/images/veerali/v7.jpg";
-import v8 from "/images/veerali/v8.jpg";
-import v9 from "/images/veerali/v9.jpg";
-import v10 from "/images/veerali/v10.jpg";
-// import v11 from "/images/veerali/v11.jpg";
-import v12 from "/images/veerali/v12.jpg";
-import v13 from "/images/veerali/v13.jpg";
-import v14 from "/images/veerali/v14.jpg";
-import v15 from "/images/veerali/v15.jpg";
-import v16 from "/images/veerali/v16.jpg";
-import v17 from "/images/veerali/v17.jpg";
-import v18 from "/images/veerali/v18.jpg";
-import v19 from "/images/veerali/v19.jpg";
-import v20 from "/images/veerali/v20.jpg";
-import v21 from "/images/veerali/v21.jpg";
-import v22 from "/images/veerali/v22.jpg";
-// import v23 from "/images/veerali/v23.jpg";
-import v24 from "/images/veerali/v24.jpg";
-import v25 from "/images/veerali/v25.jpg";
-import v26 from "/images/veerali/v26.jpg";
-import v27 from "/images/veerali/v27.jpg";
-import v28 from "/images/veerali/v28.jpg";
-import v29 from "/images/veerali/v29.jpg";
-import v30 from "/images/veerali/v30.jpg";
-// import v31 from "/images/veerali/v31.jpg";
-import v32 from "/images/veerali/v32.jpg";
-import v33 from "/images/veerali/v33.jpg";
-import v34 from "/images/veerali/v34.jpg";
-import v35 from "/images/veerali/v35.jpg";
-import v36 from "/images/veerali/v36.jpg";
-import v37 from "/images/veerali/v37.jpg";
-import v38 from "/images/veerali/v38.jpg";
-import v39 from "/images/veerali/v39.jpg";
-import v40 from "/images/veerali/v40.jpg";
-import v41 from "/images/veerali/v41.jpg";
-import v42 from "/images/veerali/v42.jpg";
-import v43 from "/images/veerali/v43.jpg";
-import v44 from "/images/veerali/v44.jpg";
-import v45 from "/images/veerali/v45.jpg";
-import v46 from "/images/veerali/v46.jpg";
-import v47 from "/images/veerali/v47.jpg";
-import v48 from "/images/veerali/v48.jpg";
-import v49 from "/images/veerali/v49.jpg";
-import v50 from "/images/veerali/v50.jpg";
-// import v51 from "/images/veerali/v51.jpg";
-import v52 from "/images/veerali/v52.jpg";
-import v53 from "/images/veerali/v53.jpg";
-import v54 from "/images/veerali/v54.jpg";
-import v55 from "/images/veerali/v55.jpg";
-import v56 from "/images/veerali/v56.jpg";
-import v57 from "/images/veerali/v57.jpg";
 
 const VeeraliAndMichale = () => {
   return (
@@ -70,7 +13,7 @@ const VeeraliAndMichale = () => {
       </div>
       {/* Front Image */}
       <div className="story-front-image">
-        <img src={v1} alt="" />
+        <img src="/images/veerali/v1.jpg" alt="" />
       </div>
       {/* Story */}
       <div className="story-blog">
@@ -126,106 +69,106 @@ const VeeraliAndMichale = () => {
 
       {/* Large Gallery Container */}
       <div className="large-gallery-container">
-        {/* <img src={v2} alt="" /> */}
-        <img src={v3} alt="" />
-        <img src={v4} alt="" />
-        <img src={v5} alt="" />
-        <img src={v6} alt="" />
+        {/* <img src="/images/veerali/v2.jpg" alt="" /> */}
+        <img src="/images/veerali/v3.jpg" alt="" />
+        <img src="/images/veerali/v4.jpg" alt="" />
+        <img src="/images/veerali/v5.jpg" alt="" />
+        <img src="/images/veerali/v6.jpg" alt="" />
       </div>
 
       {/* Small Gallery Container */}
       <div className="small-gallery-container">
-        <img src={v7} alt="" />
-        <img src={v8} alt="" />
+        <img src="/images/veerali/v7.jpg" alt="" />
+        <img src="/images/veerali/v8.jpg" alt="" />
       </div>
       <div className="large-gallery-container">
-        <img src={v9} alt="" />
-        <img src={v10} alt="" />
-        {/* <img src={v11} alt="" /> */}
+        <img src="/images/veerali/v9.jpg" alt="" />
+        <img src="/images/veerali/v10.jpg" alt="" />
+        {/* <img src="/images/veerali/v11.jpg" alt="" /> */}
       </div>
       <div className="quad-gallery-container">
-        <img src={v12} alt="" />
-        <img src={v13} alt="" />
-        <img src={v14} alt="" />
-        <img src={v15} alt="" />
+        <img src="/images/veerali/v12.jpg" alt="" />
+        <img src="/images/veerali/v13.jpg" alt="" />
+        <img src="/images/veerali/v14.jpg" alt="" />
+        <img src="/images/veerali/v15.jpg" alt="" />
       </div>
       <div className="large-gallery-container">
-        <img src={v16} alt="" />
-        <img src={v17} alt="" />
+        <img src="/images/veerali/v16.jpg" alt="" />
+        <img src="/images/veerali/v17.jpg" alt="" />
         <h6 className="stories-heading-section">GREEK SUNDOWNER</h6>
 
-        <img src={v18} alt="" />
+        <img src="/images/veerali/v18.jpg" alt="" />
       </div>
 
       {/* Repeat the above pattern for all images up to v57 */}
       <div className="large-gallery-container">
-        <img src={v19} alt="" />
-        <img src={v20} alt="" />
-        <img src={v21} alt="" />
+        <img src="/images/veerali/v19.jpg" alt="" />
+        <img src="/images/veerali/v20.jpg" alt="" />
+        <img src="/images/veerali/v21.jpg" alt="" />
       </div>
 
       <div className="small-gallery-container">
-        <img src={v22} alt="" />
-        {/* <img src={v23} alt="" /> */}
+        <img src="/images/veerali/v22.jpg" alt="" />
+        {/* <img src="/images/veerali/v23.jpg" alt="" /> */}
       </div>
       <div className="large-gallery-container">
-        <img src={v24} alt="" />
-        <img src={v25} alt="" />
-        <img src={v26} alt="" />
+        <img src="/images/veerali/v24.jpg" alt="" />
+        <img src="/images/veerali/v25.jpg" alt="" />
+        <img src="/images/veerali/v26.jpg" alt="" />
       </div>
       <h6 className="stories-heading-section">DANDIYA NIGHT</h6>
       <div className="quad-gallery-container">
-        <img src={v27} alt="" />
-        <img src={v28} alt="" />
-        <img src={v29} alt="" />
-        <img src={v30} alt="" />
+        <img src="/images/veerali/v27.jpg" alt="" />
+        <img src="/images/veerali/v28.jpg" alt="" />
+        <img src="/images/veerali/v29.jpg" alt="" />
+        <img src="/images/veerali/v30.jpg" alt="" />
       </div>
       <div className="large-gallery-container">
-        {/* <img src={v31} alt="" /> */}
-        <img src={v32} alt="" />
-        <img src={v33} alt="" />
+        {/* <img src="/images/veerali/v31.jpg" alt="" /> */}
+        <img src="/images/veerali/v32.jpg" alt="" />
+        <img src="/images/veerali/v33.jpg" alt="" />
       </div>
       <div className="small-gallery-container">
-        <img src={v34} alt="" />
-        <img src={v35} alt="" />
+        <img src="/images/veerali/v34.jpg" alt="" />
+        <img src="/images/veerali/v35.jpg" alt="" />
       </div>
       <div className="large-gallery-container">
-        <img src={v36} alt="" />
+        <img src="/images/veerali/v36.jpg" alt="" />
         <h6 className="stories-heading-section">MEXICAN HALDI</h6>
 
-        <img src={v37} alt="" />
-        <img src={v38} alt="" />
+        <img src="/images/veerali/v37.jpg" alt="" />
+        <img src="/images/veerali/v38.jpg" alt="" />
       </div>
       <div className="quad-gallery-container">
-        <img src={v39} alt="" />
-        <img src={v40} alt="" />
-        <img src={v41} alt="" />
-        <img src={v42} alt="" />
+        <img src="/images/veerali/v39.jpg" alt="" />
+        <img src="/images/veerali/v40.jpg" alt="" />
+        <img src="/images/veerali/v41.jpg" alt="" />
+        <img src="/images/veerali/v42.jpg" alt="" />
       </div>
       <div className="large-gallery-container">
-        <img src={v43} alt="" />
-        <img src={v44} alt="" />
-        <img src={v45} alt="" />
+        <img src="/images/veerali/v43.jpg" alt="" />
+        <img src="/images/veerali/v44.jpg" alt="" />
+        <img src="/images/veerali/v45.jpg" alt="" />
       </div>
       <div className="small-gallery-container">
-        <img src={v46} alt="" />
-        <img src={v47} alt="" />
+        <img src="/images/veerali/v46.jpg" alt="" />
+        <img src="/images/veerali/v47.jpg" alt="" />
       </div>
       <div className="large-gallery-container">
-        <img src={v48} alt="" />
-        <img src={v49} alt="" />
-        <img src={v50} alt="" />
+        <img src="/images/veerali/v48.jpg" alt="" />
+        <img src="/images/veerali/v49.jpg" alt="" />
+        <img src="/images/veerali/v50.jpg" alt="" />
       </div>
       <div className="quad-gallery-container">
-        {/* <img src={v51} alt="" /> */}
-        <img src={v52} alt="" />
-        <img src={v53} alt="" />
-        <img src={v54} alt="" />
+        {/* <img src="/images/veerali/v51.jpg" alt="" /> */}
+        <img src="/images/veerali/v52.jpg" alt="" />
+        <img src="/images/veerali/v53.jpg" alt="" />
+        <img src="/images/veerali/v54.jpg" alt="" />
       </div>
       <div className="large-gallery-container">
-        <img src={v55} alt="" />
-        <img src={v56} alt="" />
-        <img src={v57} alt="" />
+        <img src="/images/veerali/v55.jpg" alt="" />
+        <img src="/images/veerali/v56.jpg" alt="" />
+        <img src="/images/veerali/v57.jpg" alt="" />
       </div>
     </div>
   );
