@@ -1,3 +1,5 @@
+import "../../styles/About.css";
+
 export const metadata = {
   title: "About Us - Expert Wedding Planners Since Years | Double S Enterprises",
   description: "Meet the passionate team behind Double S Enterprises. Award-winning wedding planners in Mumbai with years of expertise in creating magical celebrations. Learn about our journey and achievements.",

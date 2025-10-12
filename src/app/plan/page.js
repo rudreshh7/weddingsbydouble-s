@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import "../../styles/Plan.css";
 import Footer from "../../components/Footer";
 
 const Plan = () => {

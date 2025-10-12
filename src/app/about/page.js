@@ -2,7 +2,6 @@
 import React from "react";
 import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
-import "../../styles/About.css";
 import Footer from "../../components/Footer";
 
 const About = () => {

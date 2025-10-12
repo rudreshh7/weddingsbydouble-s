@@ -1,3 +1,5 @@
+import "../../styles/Services.css";
+
 export const metadata = {
   title: "Wedding Services - Complete Planning & Decoration | Double S Enterprises",
   description: "Discover our comprehensive wedding services: luxury planning, mandap decoration, venue selection, floral arrangements, and complete event coordination. Creating magical celebrations in Mumbai and beyond.",

@@ -1,3 +1,5 @@
+import "../../styles/Decor.css";
+
 export const metadata = {
   title: "Wedding Decoration Gallery - Mandap & Venue Decor | Double S Enterprises",
   description: "Explore our stunning wedding decoration gallery featuring mandap designs, floral arrangements, and venue transformations. Premium wedding decor services in Mumbai for all ceremonies.",

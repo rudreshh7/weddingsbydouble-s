@@ -2,7 +2,6 @@
 import React from "react";
 import ServiceCard from "../../components/ui/ServiceCard";
 import Footer from "../../components/Footer";
-import "../../styles/Services.css";
 
 const Services = () => {
   const services = [

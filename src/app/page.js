@@ -2,7 +2,6 @@
 import React from "react";
 import Hero from "../components/Hero";
 import HomeArt from "../components/ui/HomeArt";
-import "../styles/Home.css";
 
 import SelectedStory from "../components/ui/SelectedStory";
 import ImageGallery from "../components/ui/ImageGallery";

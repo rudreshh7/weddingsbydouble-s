@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-// import "../styles/VeeraliAndMichale.css";
-import "../../styles/NikitaAndPhilippe.css";
 
 const VeeraliAndMichale = () => {
   return (

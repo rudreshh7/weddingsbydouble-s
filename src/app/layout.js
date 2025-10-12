@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar";
 import PerformanceMonitor from "../components/PerformanceMonitor";
 import "../styles/App.css";
+import "../styles/Home.css";
+import "../styles/NikitaAndPhilippe.css";
 
 export const metadata = {
   title: {
