@@ -11,6 +11,8 @@ const SelectedStory = () => {
     s2: { img: "/images/anisha.jpg", route: "/anisha-and-will" },
     s3: { img: "/images/nikunjstory.jpg", route: "/aishwarya-and-nikunj" },
     s4: { img: "/images/michaelstory.jpg", route: "/veerali-and-michale" },
+    s5: { img: "/images/prakruti/pn9.jpg", route: "/prakruti-and-neil" },
+    s6: { img: "/images/sanjana/sa68.jpg", route: "/sanjana-and-aman" },
   };
 
   const [selectedStory, setSelectedStory] = useState("s1");
@@ -45,6 +47,14 @@ const SelectedStory = () => {
     s4: {
       title: "Veerali and Michale",
       desc: "Beneath a sky full of stars and surrounded by loved ones, Veerali and Michale exchanged vows in a celebration that was as magical as their journey—graceful, soulful, and utterly unforgettable.",
+    },
+    s5: {
+      title: "Prakruti and Neil",
+      desc: "A celebration of love that transcended boundaries, Prakruti and Neil's wedding was a magnificent journey through tradition—from vibrant Haldi to elegant Mehendi, sacred ceremonies to joyous after-parties.",
+    },
+    s6: {
+      title: "Sanjana and Aman",
+      desc: "A celebration of eternal love, Sanjana and Aman's wedding journey unfolded through intimate welcome dinners, sacred ghar pooja, vibrant haldi, energetic sangeet, and beautiful wedding ceremonies in Mumbai.",
     },
   };
 

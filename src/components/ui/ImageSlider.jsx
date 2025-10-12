@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import "./ImageSlider.css";
 import {
   ArrowRight,
@@ -59,10 +60,14 @@ const ImageSlider = ({ imageUrls, textContent }) => {
             className="slide-container"
             style={{ translate: `${-100 * imageIndex}%` }}
           >
-            <img
+            <Image
               src={url}
-              alt={`slide ${index + 1}`}
+              alt={`Wedding photography slide ${index + 1}`}
               className="img-slider-img"
+              fill
+              priority={index === 0}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+              quality={90}
             />
             {textContent && textContent[index] && (
               <div className="slide-text-overlay">

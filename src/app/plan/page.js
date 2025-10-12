@@ -2,6 +2,7 @@
 import React from "react";
 import "../../styles/Plan.css";
 import Footer from "../../components/Footer";
+
 const Plan = () => {
   const images = [
     "/images/plan/planend1.jpg", // Update with your actual image paths

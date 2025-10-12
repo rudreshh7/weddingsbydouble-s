@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Footer from "../../components/Footer";
 import "../../styles/Decor.css";
+
 const Decor = () => {
   const images = Array.from(
     { length: 46 },
