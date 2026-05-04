@@ -96,7 +96,7 @@ const NikitaAndPhilippe = () => {
         <img src="/images/nikita/n24.jpg" alt="Gallery 24" />
         <img src="/images/nikita/n25.jpg" alt="Gallery 25" />
         <img src="/images/nikita/n26.jpg" alt="Gallery 26" />
-        <img src="/images/nikita/n27.jpg" alt="Gallery 27" />
+        {/* <img src="/images/nikita/n27.jpg" alt="Gallery 27" /> */}
         <img src="/images/nikita/n28.jpg" alt="Gallery 28" />
         <img src="/images/nikita/n29.jpg" alt="Gallery 29" />
         <img src="/images/nikita/n30.jpg" alt="Gallery 30" />
@@ -138,7 +138,7 @@ const NikitaAndPhilippe = () => {
 
         <img src="/images/nikita/n61.jpg" alt="Gallery 61" />
         <img src="/images/nikita/n62.jpg" alt="Gallery 62" />
-        <img src="/images/nikita/n63.jpg" alt="Gallery 63" />
+        {/* <img src="/images/nikita/n63.jpg" alt="Gallery 63" /> */}
         <img src="/images/nikita/n64.jpg" alt="Gallery 64" />
         <img src="/images/nikita/n65.jpg" alt="Gallery 65" />
         <img src="/images/nikita/n66.jpg" alt="Gallery 66" />
