@@ -6,7 +6,7 @@ import "../styles/NikitaAndPhilippe.css";
 
 export const metadata = {
   title: {
-    default: "Weddings by Double S - Premier Wedding Planners & Decorators in Mumbai",
+    default: "Weddings by Double S",
     template: "%s | Weddings by Double S"
   },
   description: "Transform your dream wedding into reality with Double S Enterprises. Premier wedding planners and decorators in Mumbai, India. Specializing in luxury weddings, mandap decoration, and bespoke celebration planning.",

@@ -4,6 +4,9 @@ import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import Footer from "../../components/Footer";
 
+
+
+
 const About = () => {
   const tableRows = [
     { year: "2024", title: "Times applaud Trendsetters award" },
@@ -142,7 +145,7 @@ const About = () => {
     },
   ];
   return (
-    <div>
+    <div style={{ overflowX: "hidden", maxWidth: "100%" }}>
       {/* About Us Banner */}
       <div className="about-us-banner">
         <div className="overlay">
@@ -157,7 +160,7 @@ const About = () => {
             Meet Shanaya, the creative force behind our extraordinary decor and
             design endeavors. Imbued with an unbridled passion and a discerning
             eye for perfection, Shanaya has immersed herself in the art of decor
-            since 2017. Her journey, which commenced at a young age, has evolved
+            since 2017. Her ourney, which commenced at a young age, has evolved
             into a testament of unwavering dedication and unparalleled
             creativity. Breathing life into spaces with an innate sense of
             style, she has curated breathtaking designs that have graced
@@ -174,6 +177,24 @@ const About = () => {
           <img src="/images/aboutus/about2.jpg" alt="Shehzarìn and Shanaya" />
         </div>
       </div>
+
+      {/* Side Decorator */}
+      <div style={{ position: "relative", width: "100%", height: "0" }}>
+        <img 
+          src="/blossom.jpg" 
+          alt="Decorative Cherry Element" 
+          style={{ 
+            position: "absolute", 
+            right: 0, 
+            top: "-100px", 
+            width: "250px", 
+            opacity: 0.8, 
+            zIndex: -1,
+            pointerEvents: "none"
+          }} 
+        />
+      </div>
+
       {/* Team Section */}
       <section className="team-section">
         <div
@@ -285,6 +306,9 @@ const About = () => {
 
       {/* Achievement 2 section */}
 
+      {/* Side Decorator - Blue Flower */}
+    
+
       {/* Our Founders */}
       <section className="our-founders">
         <h6 className="founder-heading">Our Founders</h6>
@@ -306,32 +330,7 @@ const About = () => {
           ))}
         </div>
       </section>
-      {/* <section className="achievement-section">
-        <div className="achievements-container">
-          <div className="achievements-image">
-            <img src="/images/aboutus/about3.jpg" alt="Wedding Achievement" />
-          </div>
-          <div className="achievements-content">
-            <h2>Our Achievements</h2>
-            <table>
-              <tbody>
-                <tr>
-                  <td>2024</td>
-                  <td>Times applaud Trendsetters award</td>
-                </tr>
-                <tr>
-                  <td>2023</td>
-                  <td>Customer Satisfaction Award</td>
-                </tr>
-                <tr>
-                  <td>2023</td>
-                  <td>Innovating Wedding Design Award</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section> */}
+     
 
       {/* Writeup One */}
       <div>
@@ -355,7 +354,7 @@ const About = () => {
         <p className="about-writeup-one">
           Together, Shehzarin and Shanaya form the heart and mind of our
           company, where hospitality meets design, and every celebration
-          is a masterpiece. Complementing this seasoned matriarch is Shanaya the
+          is a masterpiec. Complementing this seasoned matriarch is Shanaya the
           creative luminary. A true aficionado of décor, she breathes life into
           spaces with an unrivaled passion. A creative wonder child, Shanaya's
           love for design was nurtured at a young age, endowing her with a
@@ -364,7 +363,134 @@ const About = () => {
         </p>
       </div>
 
-      <section className="achievement-section">
+      {/* Here Adding One Part */}
+ 
+     {/* <section style={{
+  display: 'flex',
+  flexWrap: 'wrap',
+  gap: '16px',
+  maxWidth: '1200px',
+  margin: '0 auto',
+  padding: '0 16px',
+}}>
+  <div style={{
+    flex: '1 1 300px',
+    minWidth: '0',
+  }}>
+    <img
+      src="/achi1.jpeg"
+      alt=""
+      style={{ width: '100%', height: 'auto', display: 'block' }}
+    />
+  </div>
+
+  <div style={{
+    flex: '1 1 300px',
+    minWidth: '0',
+  }}>
+    <img
+      src="/achi2.jpeg"
+      alt=""
+      style={{ width: '100%', height: 'auto', display: 'block' }}
+    />
+  </div>
+</section>  */}
+
+
+<section
+  style={{
+    maxWidth: '1100px',
+    margin: '0 auto',
+    padding: '50px 16px',
+  }}
+>
+  <h2
+    style={{
+      textAlign: 'center',
+      fontSize: '28px',
+      marginBottom: '30px',
+      fontWeight: '600',
+      color:"#8c916c"
+    }}
+  >
+    Recognition & Achievements
+  </h2>
+
+  <div
+    style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '20px',
+      justifyContent: 'center',
+    }}
+  >
+    {/* Card 1 */}
+    <div
+      style={{
+        flex: '1 1 320px',
+        maxWidth: '380px',
+        background: '#fff',
+        borderRadius: '12px',
+        overflow: 'hidden',
+      }}
+    >
+      <img
+        src="/achi1.jpeg"
+        alt="WeddingSutra Award"
+        style={{
+          width: '100%',
+          height: '420px', // taller like mobile
+          objectFit: 'cover',
+        }}
+      />
+
+      <div style={{ padding: '16px' }}>
+        <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '8px', color:'#8c916c' }}>
+          Nominee — Best Haldi Celebration (Design)
+        </h3>
+
+        <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#8c916c' }}>
+          Double S Enterprises earned a prestigious nomination at the WeddingSutra Influencer Awards 2025 for Best Haldi Celebration in the Design category. Hosted at the iconic Taj Mahal Palace, Mumbai, this nomination celebrates the brand's ability to craft visually stunning, culturally rooted celebrations that go beyond decoration to create genuine emotional experiences.
+        </p>
+      </div>
+    </div>
+
+    {/* Card 2 */}
+    <div
+      style={{
+        flex: '1 1 320px',
+        maxWidth: '380px',
+        background: '#fff',
+        borderRadius: '12px',
+        overflow: 'hidden',
+      }}
+    >
+      <img
+        src="/achi2.jpeg"
+        alt="30 Under 30 Award"
+        style={{
+          width: '100%',
+          height: '420px',
+          objectFit: 'cover',
+        }}
+      />
+
+      <div style={{ padding: '16px' }}>
+        <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '8px', color:'#8c916c' }}>
+          30 Under 30 — Design Category
+        </h3>
+
+        <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#8c916c' }}>
+          Shanaya Udwadia was honoured with the 30 Under 30 Award 2025 in the Design category by Entrepreneurs Today. This internationally recognised award highlights outstanding young entrepreneurs shaping their industries. As the driving force behind Double S Enterprises, this reflects not just individual talent but the rise of a brand setting new benchmarks in the Indian celebrations space.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+      <section className="achievement-section" style={{ overflow: 'hidden' }}>
         <div className="achievements-container flex flex-col md:flex-row gap-8">
           {/* Image Animation */}
           <motion.div
@@ -385,7 +511,7 @@ const About = () => {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-semibold mb-4">Our Achievements</h2>
+            <h2 className="text-3xl font-semibold mb-4">More Achievements</h2>
             <table className="w-full text-left border-separate border-spacing-y-2">
               <tbody>
                 {tableRows.map((row, index) => (
@@ -405,6 +531,10 @@ const About = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* Here Adding Two More sections */}
+
+
 
       {/* Ending */}
       <div className="contact-container">
